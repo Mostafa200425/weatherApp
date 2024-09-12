@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+}
+
+.card {
+    width: 90%;
+    max-width: fit-content;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #FFF;
+    margin: 100px auto 0;
+    border-radius: 2rem;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search .searchBox {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 2.2rem;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search .searchButton {
+    background: #ebfffc;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .searchButton:hover {
+    background-color: #f7fffe;
+}
+
+.search .searchButton img {
+    width: 30%;
+}
+
+.weatherStatus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}.weatherStatus
+
+.weatherStatus .icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weatherStatus .temp {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weatherStatus .cityName {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.weatherStatus .details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.weatherStatus .details .detailsIcon {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.weatherStatus .details .detailsIcon img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.weatherStatus .details .detailsIcon p {
+    font-size: 12px;
+}
+
+.weatherStatus .details .detailsIcon .humidity,
+.weatherStatus .details .detailsIcon .wind{
+    font-size: 22px;
+    margin-top: -6px;
+}
+
+.error {
+    display: none;
+}
