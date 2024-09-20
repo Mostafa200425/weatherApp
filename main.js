@@ -45,7 +45,16 @@ window.onload = function () {
     checkWeather(cityName);
 };
 
-document.querySelector(".searchButton").onclick = function () {
+function searchFor () {
     cityName = `&q=${inputName.value}`;  
     checkWeather(cityName);  
 };
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        searchFor();
+    }
+});
+
+
+document.querySelector(".searchButton").onclick = searchFor();
